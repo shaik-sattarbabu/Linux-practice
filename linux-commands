@@ -1,0 +1,191 @@
+Permissions 
+Root user - full permissions (sudo -I or sudo su -) (logout EXIT)
+Ec2 user- limited permissions
+System command info:
+•	Uname: will give the operating system info like linux
+•	Uname -r: show kernel info
+•	uname -a: show the kernel version or system info (all info)
+•	uptime: server running time, no of users,server load info
+•	uptime -s: start time
+•	uptime -p: how many minutes we used the server
+•	hostname:  give host name
+•	hostnamectl set-hostname <give name>: to chage the host name of root user
+•	ifconfig or hostname -I or ip route or ip adder: give the private Ip
+•	timedatectl set-timezone Asia/Kolkata: to change time to IST form utc
+•	timedatectl: show present time zone
+•	clear or ctrl+l: to clear screen
+•	date: complete date
+•	date +”%m”: print specific time date-A=wednersday,B=June,d=22,m=6thmonth,y=year(25),H=hours(21),M=min,S=sec,D or F=date
+•	ps: process running background 
+•	kill -9 pid: kill unwanted processes
+•	top/ htop: process monitoring 
+hardware  command info:
+•	lscpu: give complete cpu usage info
+•	free: ram usage info in KB
+•	free -m : ram usage in MB
+•	free -g: ram usage in GB
+•	free -h: ram usage in human readable format in mb
+•	df -h: disk space(EBS) usage
+•	whoami: show current user
+•	who: show who connected server
+
+File command:
+•	Touch: only create the file
+•	Touch file{1..2}: create file1 file2 ..file5
+•	Touch app.py or app.java: create python and java file
+•	Touch devops/docker: create the file inside the devops directory- only if the devops folder available
+•	Touch devops/file{1..3}: create the multiple file inside the devops directory- only if the devops folder available
+•	Vi(Vim): will create and open the file 
+•	Ls or ll: show the file name| show all files and permissions
+•	Rm file: remove file or multiple files empty
+•	Rm -f file: remove file with out permission(forcefully) 
+•	Rm -f *: remove all files empty
+•	Rm -f *.jave: remove all java files
+•	Rm -f a*: remove all files starting with a letter
+•	Mkdir folder folder1: create directory
+•	Mkdir devops/python: created python directory inside devops dir-only if the devops folder available
+•	Mkdir -p devops/python: created python directory inside devops dir
+•	Rmdir folder1 folder2: remove empty folder
+•	Rmdir *: remove all directories 
+•	Rm -rf folder: remove the non empty directory (recursive forcefuly)
+•	Rm -rf *: remove all directories 
+•	Cd: change directory
+•	Cd -: back to previous file
+•	Cd ../../: move two steps back in the path 
+•	Cd foldername: to move to forward folder
+•	Pwd: present working directory 
+•	Upper arrow: move to previos commands
+•	Cd f+tab: give the file name
+•	Ctrl+u: remove command
+•	Ctrl+a: move to start
+•	Ctrl+e:mve curser to end 
+•	ll : used to see the list of files in order (A-Z)
+•	ll filename: give is data available in file or not
+•	ll -t : used to see the list of the files based on modification/creation time
+•	ll -r : used to see the files in reverse order (Z to A) 
+•	ll -a : used to see all files including hidden
+•	cat filename: used to read the data from a file 
+•	cat -n filename : used to read the data including line numbers of a file 
+•	cat>filename +enter+add text: used to overwrite(remove the older data) the data –ctrl+d to save the file
+•	cat>>filename: used to append (add) the data 
+•	head filename : used to print first 10 lines of a file 
+•	tail filename : used to print last 10 lines of a file 
+•	head -5 filename : used to print first 5 lines of a file
+•	tail -7 filename : used to print last 7 lines of a file
+•	sed -n ‘3,15p’ filename : used to print lines from 3 to 15 
+•	sed -n ‘16p’ filename : used to print 16th line of a file
+•	cp file1 file2 : the data from file1 copies into file2. But the problem is it will overwrite the data which are present in file2.
+•	Cp (or mv) aws azure /root/devops: 2 files (aws and azure) and 1 folder (devops). Now how to copy those 2 files into a folder at a time
+•	Cp folder1/* folder2: copy everything from folder1 to folder2(without subfolder)
+•	Cp -r folder1/* folder2: copy everything from folder1 to folder2(with subfolder)
+•	tee >(cat > file2) >(cat >file3)<file1 or cat file1 | tee -a file2 file3: 3 files (file1, file2 and file3), file1 has data. Now how to copy the data from file1 to file2 and file3 at a time.(a=append, tee=take the values and will paste the vaues to file2 file3 )
+•	touch /path/to/directory/file1.txt /path/to/directory/file2.txt: create multiple files in directory
+•	
+•	cat source_file (file1) >> destination_file (file2): move file1 to file2 without over write file
+•	mv Jenkinsfile Folder-1: used to move the files or data from one place to another place. also used to rename the files.
+•	Mv text.txt text.logto rename the file
+•	
+Editor
+There are 2 types of editors in linux 1. Vim editor 2. Nano editor
+1.	Command mode 2. Insert mode 3. Save & quit mode
+1. COMMAND MODE: this is the default mode in vim editor, It is used to perform some actions like used to copy the data, delete the data and we can make undo and redo the changes as well. 
+•	gg : used to go to 1st line of the file 
+•	G : used to go to last line of the file 
+•	M : used to go to middle of the file 
+•	4gg : used to go to 4th line of the file 
+•	17gg : used to go to 17th line of the file 
+•	:23 : used to go to 23rd line of the file 
+•	:set number : used to set numbers of the file 
+•	:set nonumber : used to set numbers of the file 
+•	yy : used to copy the curser line 
+•	4yy : used to copy 4 lines from our cursor 
+•	p : paste the copied content 
+•	10p : paste the copied content 10 times 
+•	dd : used to delete the  curser line 
+•	5dd : used to delete 5 lines from the cursor 
+•	u : used to undo the changes 
+•	crtl + r : used to redo the changes. 
+•	/word or ?word : used to search for a word in a file 
+•	:%s/old/new/g : used to replace
+2.	INSERT MODE: This mode is used to insert the data or make any modifications in a file. 
+•	i : To go to insert mode 
+•	 esc: To go back to command mode 
+•	: A : To go to the ending of the line To go to starting of this line 
+•	: I To create a new line above the cursor 
+•	: O To create a new line below the cursor 
+•	: o DIFFERENCE B/W COMMAND MODE KEYS & INSERT MODE. If we perform command mode keys we will be in command mode only If we perform insert mode keys we will go to insert mode.
+3.	SAVE & QUIT MODE: This is used to save the data and quit from vim editor 
+4.	w: To save the data 
+•	q: To quit from vim editor 
+•	q!: To quit forcefully 
+•	:wq : To save & quit at a time 
+•	:wq! :To save & quit forcefully at a time 
+•	Wc file: word count
+•	Wc-l: line count
+•	Wc -w: no of words
+•	Wc -c:
+
+
+Permission command :
+•	Chmod: chmod 777 file for giving the permission (rwx rwx rwx)/421 421 421)—colur will change when xcecute permissions’
+•	Chmod 777 file file2 file3:give pemissions for all mentioned files
+•	Chmod 777 *
+•	Chmod -R 777 folder/folder{1..3}: give complete permissions for all the folders and inside folder
+•	Chmod  777 folder/*:  give complete permissions inside folder not folder
+•	
+•	Mv text.txt text.logto rename the file
+USER COMMANDS 
+•	To check the list of users : cat /etc/passwd or getent passwd
+•	cat /etc/group or getent group: To check the list of groups—we can use both because every user has a groupcd 
+•	To create a user : useradd ravi 
+•	Id user: show if the user is present or not (if we created user group also will create)
+•	Cd  /home/: show the  user folder and path
+•	(switch user)Su  –  username: root user to wanted user
+•	ravi:x:1001:1001::/home/ravi:/bin/bash
+ ravi -----> username 
+x -----> it stores the users password 
+1001 ----> UID (User ID) 
+1001 -----> GID (Group ID) 
+/home/ravi ---> path of the user 
+/bin/bash -----> stores the commands 
+•	logout from the current user: exit 
+•	to set a password to user : passwd username 
+•	To get UID & GID id a user : id username 
+•	To delete a user : userdel username 
+•	To delete user along with folder : userdel -r username 
+•	To delete user forcefully : userdel -f username 
+•	To set expiry date to user : useradd -e username 
+•	To create user withour folder : useradd -M username 
+
+GROUP COMMANDS To create. a group : 
+•	groupadd groupname To List of groups : cat /etc/group  or usergetent group
+•	To delete a group : groupdel groupname 
+•	To attach a user to a group : usermod -aG groupname username 
+
+CHANGING OWERNS OF A FILE: 
+•	To change user of a file : chown newuser filename (change owner)
+•	To change group of a file : chgrp newgroup filename (change group
+•	To change user & group at a time : chown username:groupname filename1 filename2 
+•	To change user & group to multiple files : chown username:groupname f1 f2 f3 
+•	To change owners of folder : chown user:group foldername 
+•	To change owners of folder along with the files present in folder : chown -R user:group foldername 
+•	To change owners of files that are present in folder : chown user:group foldername/*
+
+SEARCH COMMANDS 
+•	Grep  -in “name” file file2: to find the word in the file file2(i=remove casesensitive, n=row no)
+•	Grep  -ic “name” file : to find the word in the file(i=remove casesensitive, c=count of name)
+•	Grep -in -e “name1” -e ”name2” file: to find name1 and name2 in the file (e =echo ,print name)
+•	Getent passwd |grep  -I “root”: to print the root user row in the user list
+•	Find filename -name  file name: 
+•	Find . – name filename: to ckeck the file name in the pwd (.=pwd all folders)
+•	Find . -type f  – name filename : to find the file only not folder name (f=file)
+•	Find . -type d  – name foldername : to find the folder name only (d=directory)
+•	Find . -type f   -user username: to find the user in user name
+•	Find . -type f   -group  group name: to find the user in group name 
+•	Find . -type f  ! -group  group name: to find the not in the user in group name 
+•	Find . -type f  -perm  777: give the list of files which are in the 777 permissions
+•	Find . -type f  ! -perm  777: give the list of files which are not in the 777 permissions
+•	Updatedb: we have to update before using rhe locate command
+•	Locate Filename: to locate the file name\
+•	Find is better than locate command
+

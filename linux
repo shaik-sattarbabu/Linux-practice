@@ -1,0 +1,63 @@
+LINUX:
+Linux is an free and Open-source operating system with high security. Linux is multi user based OS.
+Operating System: An Operating System (OS) is a software that acts as an interface between computer hardware components and the user.
+Every computer system must have at least one operating system to run other programs. Applications like Browsers, MS Office, Notepad Games, etc., need some environment to run and perform its tasks.
+The OS helps you to communicate with the computer without knowing how to speak the computer’s language. It is not possible
+KERNEL: manages the Hardware Components. CPU, memory, and peripheral devices.The kernel is the lowest level of the OS.
+DAEMONS: Manages are background services (printing, sound, scheduling, etc.) that either start up during boot or after you log into the desktop.
+SHELL: is an environment in which we can run our commands, programs, and shell scripts. It gathers input from you and executes programs based on that input. When a program finish executing, it displays that program's output.
+•	A shell is a program that serves as an interface between the user and the operating system. It provides a way for users to interact with the computer by accepting commands and then executing them.
+•	Shells can be graphical (GUI-based), where users interact with the computer through windows, icons, and buttons, or they can be command-line-based, where users type text commands into a terminal.
+COMMAND: A command is a specific instruction or request given to a computer's operating system or shell. It tells the computer to perform a particular action or task.
+TERMINAL: A terminal, also known as a command-line interface (CLI), shell, or console, is a text-based interface for interacting with a computer's operating system. It provides a way for users to enter commands and receive text-based output.
+•	Terminals are commonly used in Unix-based and Linux operating systems, but they also exist in Windows (Command Prompt or PowerShell) and macOS.
+LINUX OS DISTRIBUTIONS: Many of the users taken the linux OS and modified according to their requirements and released into the market with different names called Linux distribution.
+•	RedHat
+•	Ubuntu
+•	Debian
+•	Centos
+•	Fedora
+•	Opensuse
+•	Kali Linux
+•	Amazon Linux
+•	Rocky Linux
+LINUX HISTORY:
+•	In 1991, Linus Torvalds a student at the university of Helsinki, Finland, thought to have a freely available academic version of Unix started writing its own code.
+•	After this project became the Linux kernel.
+•	The Linux kernel is written in C language.
+•	He wrote this program specially for his own PC
+•	Firstly he wanted to name it as 'Freax' but later it became 'Linux'.
+•	In 1992, he released the kernel under GNU General Public License.
+•	Today, supercomputers, smart phones, desktop, web servers, tablet, laptops and home appliances like washing machines, DVD players, routers, modems, cars, refrigerators, etc use Linux OS.
+OPEN SOURCE:
+Linux is also distributed under an open-source license. Open source follows these key tenants:
+•	It is made freely available to the public, allowing anyone to view, use, modify, and distribute the code as they see fit.
+•	The freedom to run the program, for any purpose.
+•	The freedom to study how the program works, and change it to make it do what you wish.
+•	The freedom to redistribute copies so you can help your neighbour.
+•	The freedom to distribute copies of your modified versions to others.
+ARCHITECTURE:
+  
+KERNEL:
+It is the core or the heart of the operating system. It's the central part that manages and facilitates communication between the computer's hardware and software.
+SHELL:
+A shell that allows users to interact with the operating system. There are two types of shells.
+•	Command Line Interface (CLI): Executes the command provided by user given in the form command and display the output in terminal.
+•	Executes the process provided by user in graphical way and output is displayed in the graphical window.
+COMMAND:
+•	It is an instruction/request given to the operating system by a user.
+•	It tells computer to perform a particular task.
+TERMINAL:
+•	It is a text-based interface that allows you to interact with the operating system by typing commands.
+•	It's a way for you to communicate with the linux machines.
+
+Killercoda.com: used for the Linux practice for free
+Linux commands: In Linux we have different types of commands 
+SYSTEM COMMANDS 
+HARDWARE COMMANDS 
+FILE COMMANDS 
+PERMISSION COMMANDS 
+USER COMMANDS 
+SEARCH COMMANDS 
+NETWORKING COMMANDS
+
